@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.background-gif {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f6;
+  padding: 20px;
+  font-size: 20px;
+  color: #434343;
+}
+
+.navbar .icon img {
+  width: 95px;
+  margin: 30px;
+}
+
+.create-post-absolute {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .settings svg {
+  width: 40px;
+  height: 40px;
+}
+
+button.settings {
+  margin-right: 30px;
+}
+
+
+.view-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-icons button {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-icons .btn.active {
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+#gridView {
+  display: block;
+}
+
+#listView {
+  display: none;
+}
+
+.square-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.full-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.list-group-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+#listView {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem; 
+  padding: 3rem 0;
+  min-height: 70vh;
+  max-width: 500px;
+  margin: 0 auto; 
+  background: transparent;
+}
+
+.instax-post {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 5px solid white; 
+}
+
+.instax-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.instax-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.caption {
+  padding: 1rem 1.2rem 1.5rem;
+}
+
+.caption h5 {
+  margin: 0.4rem 0 0.3rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: #222;
+}
+
+.caption p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.footer {
+  position: relative;
+  left: 30px;
+  color: grey;
+  font-size: 14px;
+}
